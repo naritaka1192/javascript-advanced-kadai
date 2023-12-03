@@ -11,6 +11,11 @@ body{
   color:#888;
 }
 
+#typecount{
+  color:blue;
+  font-weight:bold;
+
+}
 /* テキストが表示される領域 */
 .wrap{
   margin-top:20px;

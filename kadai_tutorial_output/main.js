@@ -9,6 +9,7 @@ const typedfield = document.getElementById('typed');
 const wrap  = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
+const typecount = document.getElementById('typecount');
 
 // 複数のテキストを格納する配列
 const textLists= [
@@ -56,8 +57,13 @@ const keyPress = e =>{
 // スコアを１足す
  score++;
 
+// // スコアを足していくのを作る？
+
+// typecount.textContent = score;
+
+
   // １。typedにuntypedの先頭文字（0，1）を定義する
-  typed = untyped.substring(0,0);
+  typed += untyped.substring(0,1);
   // ２．untypedに先頭の数から次の文字以降を定義するする
   untyped = untyped.substring(1);
 // typedに１を代入
